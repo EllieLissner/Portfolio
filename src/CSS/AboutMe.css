@@ -1,0 +1,62 @@
+.treeimg{
+    grid-area: treeImage;
+    height: 84vh;
+    width: 300px;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: inherit;
+}
+
+.title{
+    grid-area: title;
+    color: white;
+    text-align: left;
+    padding-left: 25px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.name{
+    font-weight: bold;
+    color: #87CBAC;
+}
+
+.job{
+    font-weight: bolder;
+    color: #8DE4FF;
+}
+
+.personality {
+    grid-area: personality;
+    color: white;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 30px;
+
+}
+
+.seeking {
+    grid-area: seeking;
+    color: white;
+    text-align: left;
+    padding-left: 25px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    background-color: #7A7978;
+    height: 84vh;
+    display: grid;
+    grid-template-columns: 100px auto auto auto auto 100px;
+    grid-template-rows: 80px auto auto auto 20px;
+    grid-template-areas: 
+        " treeImage treeImage . . . . " 
+        " treeImage treeImage title title title . "
+        " treeImage treeImage . personality personality . "
+        " treeImage treeImage seeking seeking seeking . "
+        " treeImage treeImage . . . . ";
+    justify-items: start;
+       
+}
+

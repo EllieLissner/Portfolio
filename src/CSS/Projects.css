@@ -1,0 +1,105 @@
+#projects {
+    grid-area: projects;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    align-self: center;
+}
+
+.flip-container {
+    perspective: 1000px;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 500px;
+    height: 300px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #7A7978;
+}
+
+h4 {
+    color: #87CBAC;
+}
+
+h5 {
+    color: #8DE4FF;
+}
+
+.pictureSaver {
+    grid-area: pictureSaver;
+}
+
+.picimg {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.falendar {
+    grid-area: falendar;
+}
+
+.falimg {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.motivationalPuppy {
+    grid-area: motivationalPuppy;
+}
+
+.motimg {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.bunnyChase {
+    grid-area: bunnyChase;
+}
+
+.chaseimg {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.projectsContainer {
+    background-color: #87CBAC;
+    display: grid;
+    grid-template-columns: 100px auto auto 100px;
+    grid-template-rows: 50px auto auto 50px;
+    grid-template-areas: 
+    " . projects projects . "
+    " . pictureSaver falendar . "
+    " . motivationalPuppy bunnyChase . ";
+}
+

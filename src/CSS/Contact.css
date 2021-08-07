@@ -1,0 +1,42 @@
+#contact {
+    grid-area: contact;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    align-self: center;
+    color: #8DE4FF;;
+}
+
+.contactLink {
+    grid-area: link;
+    text-align: left;
+    align-self: center;
+    color: #8DE4FF;
+}
+
+.info {
+    grid-area: info;
+    text-align: left;
+    align-self: center;
+}
+
+.dirContactLink {
+    color: #8DE4FF;
+    text-decoration: none;
+}
+
+.dirContactLink:hover {
+    text-decoration: underline;
+}
+
+
+.contactContainer {
+    display: grid;
+    background-color: #908F8E;
+    grid-template-columns: 100px auto auto auto 100px;
+    grid-template-rows: 10px 75px 10px;
+    grid-template-areas: 
+        " . . . . . " 
+        " . contact link info . "
+        " . . . . . ";
+}

@@ -1,0 +1,126 @@
+#tech {
+    grid-area: tech;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    align-self: center;
+}
+
+.html {
+    grid-area: html;
+}
+
+.htmlimg {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.css {
+    grid-area: css;
+}
+
+.cssimg {
+    height: 90px;
+    width: 65px;
+    /* object-fit: cover; */
+}
+
+.javascript {
+    grid-area: javascript;
+}
+
+.jsimg {
+    height: 90px;
+    width: 65px;
+    /* object-fit: cover; */
+}
+
+.bootstrap {
+    grid-area: bootstrap;
+}
+
+.bsimg {
+    height: 80px;
+    width: 80px;
+    /* object-fit: cover; */
+}
+
+.node {
+    grid-area: node;
+}
+
+.nimg {
+    height: 80px;
+    width: 70px;
+    /* object-fit: cover; */
+}
+
+.sequelize {
+    grid-area: sequelize;
+}
+
+.postgres {
+    grid-area: postgres;
+}
+
+.react {
+    grid-area: react;
+}
+
+.mongo {
+    grid-area: mongo;
+}
+
+.mgimg{
+    height: 85px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.mongoose {
+    grid-area: mongoose;
+}
+
+.mgsimg {
+    height: 50px;
+    width: 130px;
+    object-fit: cover;
+}
+
+.python {
+    grid-area: python;
+}
+
+.pythimg {
+    height: 80px;
+    width: 69px;
+    object-fit: cover;
+}
+
+.typescript {
+    grid-area: typscript;
+}
+
+.tsimg {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.techimg {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.techContainer {
+    display: grid;
+    grid-template-columns: 100px auto auto auto auto 100px;
+    grid-template-rows: 100px auto auto auto 100px;
+    grid-template-areas: 
+        " . . tech tech . . " 
+        " . html css javascript bootstrap . "
+        " . node sequelize postgres react . "
+        " . mongo mongoose python typscript . ";
+}
