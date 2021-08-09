@@ -15,7 +15,7 @@ import typescriptimg from '../images/ts-logo-512.png'
 export default function TechStack() {
     return (
         <div className="techContainer">
-            <a id="tech">Tech Stack</a>
+            <h3 id="tech">Tech Stack</h3>
             <div className="html">
                 <img className="htmlimg" src={htmlimg}></img>
             </div>
