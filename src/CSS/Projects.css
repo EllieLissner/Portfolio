@@ -33,6 +33,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: 4px 4px 8px -4px #333;
 }
 
 .front {
@@ -41,16 +42,17 @@
 
 .back {
     transform: rotateY(180deg);
-    background-color: #7A7978;
+    background-color: white;
 }
 
 h4 {
-    color: #87CBAC;
+    color: #54B689;
 }
 
 h5 {
-    color: #8DE4FF;
+    color: #00BCF5;
 }
+
 
 .pictureSaver {
     grid-area: pictureSaver;
@@ -95,11 +97,27 @@ h5 {
 .projectsContainer {
     background-color: #87CBAC;
     display: grid;
-    grid-template-columns: 100px auto auto 100px;
-    grid-template-rows: 50px auto auto 50px;
     grid-template-areas: 
-    " . projects projects . "
-    " . pictureSaver falendar . "
-    " . motivationalPuppy bunnyChase . ";
+    " projects "
+    " pictureSaver "
+    " falendar "
+    " motivationalPuppy "
+    " bunnyChase ";
+    justify-content: center;
 }
 
+.projectsContainer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 700px) {
+    .projectsContainer {
+        grid-template-columns: 100px auto auto 100px;
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-areas: 
+        " . projects projects . "
+        " . pictureSaver falendar . "
+        " . motivationalPuppy bunnyChase . ";
+    }
+    
+}

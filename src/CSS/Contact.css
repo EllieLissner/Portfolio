@@ -4,7 +4,6 @@
     font-weight: bold;
     font-size: 24px;
     align-self: center;
-    color: #8DE4FF;;
 }
 
 .contactLink {
@@ -33,10 +32,25 @@
 .contactContainer {
     display: grid;
     background-color: #908F8E;
-    grid-template-columns: 100px auto auto auto 100px;
-    grid-template-rows: 10px 75px 10px;
+    /* grid-template-columns: 100px auto auto auto 100px; */
+    /* grid-template-rows: 10px 75px 10px; */
     grid-template-areas: 
-        " . . . . . " 
-        " . contact link info . "
-        " . . . . . ";
+        " contact " 
+        " link "
+        " info ";
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+@media screen and (min-width: 700px) {
+    
+    .contactContainer {
+        grid-template-columns: 100px auto auto auto 100px;
+        grid-template-rows: 10px 75px 10px;
+        grid-template-areas: 
+            " . . . . . " 
+            " . contact link info . "
+            " . . . . . ";
+        justify-content: initial;
+    }
 }

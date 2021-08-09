@@ -12,7 +12,7 @@ import calendargif from '../images/calendar.gif'
 export default function  Projects() {
     return(
         <div className="projectsContainer">
-            <a id="projects">Projects</a>
+            <h3 id="projects">Projects</h3>
             <div className="pictureSaver flip-container" 
                 // onTouchStart="this.classList.toggle('hover)"
             >

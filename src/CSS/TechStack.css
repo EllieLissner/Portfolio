@@ -116,11 +116,17 @@
 
 .techContainer {
     display: grid;
-    grid-template-columns: 100px auto auto auto auto 100px;
+    grid-template-columns: 16px auto auto auto auto 16px;
     grid-template-rows: 100px auto auto auto 100px;
     grid-template-areas: 
         " . . tech tech . . " 
         " . html css javascript bootstrap . "
         " . node sequelize postgres react . "
         " . mongo mongoose python typscript . ";
+}
+
+@media screen and (min-width: 700px) {
+    .techContainer {
+        grid-template-columns: 100px auto auto auto auto 100px;
+    }
 }
