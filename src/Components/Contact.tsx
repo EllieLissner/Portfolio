@@ -18,7 +18,7 @@ export default function Contact() {
             </Box>
             <Box className="info">
                 <a className="dirContactLink" href="https://github.com/EllieLissner" target="_blank"><FaGithub/>My Github Page</a><br/>
-                <a className="dirContactLink" href="https://drive.google.com/file/d/1-_o5GujKRNbr0B9nG0YWoWX1J6MwjC9D/view?usp=sharing" target="_blank"> <FaFilePdf/> Resume</a>
+                <a className="dirContactLink" href="https://drive.google.com/file/d/1vubpMQN7TcpYl_5VVjxqlzidFfPb0BMs/view?usp=sharing" target="_blank"> <FaFilePdf/> Resume</a>
             </Box>
            
         </Box>
